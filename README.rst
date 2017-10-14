@@ -32,4 +32,12 @@ Quick start
 5. Tabulate a QuerySet::
     
     from myapp.models import MyModel
-    print MyModel.objects.all().tabulate()
+    print MyModel.objects.all().tabulate(tablefmt='psql')
+
+    '+----------+-------------+'
+    '| name     |   pk__count |'
+    '|----------+-------------|'
+    '| Django   |           1 |'
+    '| Python   |           1 |'
+    '| Tabulate |           1 |'
+    '+----------+-------------+'
