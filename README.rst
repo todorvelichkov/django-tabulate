@@ -13,7 +13,7 @@ Quick start
 
 2. Lets your QuerySet Inherit from `TabulateMixin` or `TabulateQuerySet`::
 
-    from django_tabulate import TabulateMixin
+    from django_tabulate.mixins import TabulateMixin
 
     class MyQuerySet(TabulateMixin, models.QuerySet):
         #...
