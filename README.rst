@@ -11,7 +11,7 @@ Quick start
 
     pip install django-tabulate
 
-2. Lets your QuerySet Inherit from `TabulateMixin` or `TabulateQuerySet`:
+2. Lets your QuerySet Inherit from `TabulateMixin` or `TabulateQuerySet`::
 
     from django_tabulate import TabulateMixin
 
@@ -25,11 +25,11 @@ Quick start
         #if we have a manager, then
         objects = MyManager.from_queryset(MyQuerySet)()
 
-4. Start the python shell
+4. Start the python shell::
     
     python manage.py shell
 
-5. Tabulate a QuerySet
+5. Tabulate a QuerySet::
     
     from myapp.models import MyModel
     print MyModel.objects.all().tabulate()
