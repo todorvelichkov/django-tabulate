@@ -34,13 +34,13 @@ You can use it as a function:
     from myapp.models import MyModel
     from django_tabulate import tabulate_qs
     print tabulate_qs(MyModel.objects.all())
-    +------+----------+
-    |   id | name     |
-    |------+----------|
-    |    1 | Python   |
-    |    2 | Django   |
-    |    3 | Tabulate |
-    +------+----------+
+    # +------+----------+
+    # |   id | name     |
+    # |------+----------|
+    # |    1 | Python   |
+    # |    2 | Django   |
+    # |    3 | Tabulate |
+    # +------+----------+
 
 Or as a QuerySet mixin:
 
@@ -65,9 +65,10 @@ Or as a QuerySet mixin:
 Settings
 -----------
 
-You can override all default tabulate settings via `TABULATE_DEFAULTS`
+You can override all default tabulate settings via `TABULATE_DEFAULTS`, e.g.
 
 .. code-block:: python
+
     TABULATE_DEFAULTS = {
         'tablefmt': 'psql'
     }
