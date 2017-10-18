@@ -7,7 +7,7 @@ with open(os.path.join(os.path.dirname(__file__), 'README.rst')) as readme:
 # allow setup.py to be run from any path
 os.chdir(os.path.normpath(os.path.join(os.path.abspath(__file__), os.pardir)))
 
-version = __import__('django_tabulate').VERSION
+version = '0.1.1'
 
 setup(
     name='django-tabulate',
@@ -15,12 +15,12 @@ setup(
     packages=find_packages(),
     include_package_data=True,
     license='MIT',
-    description='Simple Python-Tabulate mixin for Django QuerySets.',
+    description='Pretty-print Django QuerySets.',
     long_description=README,
     url='https://github.com/todorvelichkov/django-tabulate',
     author='Todor Velichkov',
     author_email='todorvelichkov89@gmail.com',
-    keywords='Pretty-print Django queryset',
+    keywords='tabulate Pretty-print Django queryset',
     install_requires=[
        'django',
        'tabulate'

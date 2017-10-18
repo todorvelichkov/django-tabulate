@@ -5,6 +5,10 @@ INSTALLED_APPS = (
     'tests',
 )
 
+TABULATE_DEFAULTS = {
+    'tablefmt': 'simple'
+}
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',

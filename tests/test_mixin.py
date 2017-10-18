@@ -1,6 +1,7 @@
 from django.test import TestCase
 from django.db.models import Count
 from tests.models import Book
+from django_tabulate import tabulate_qs
 
 class TabulateTests(TestCase):
 
@@ -18,6 +19,8 @@ class TabulateTests(TestCase):
             '   2  Django',
             '   3  Tabulate',
         ]))
+
+        self.assertEqual(qs.tabulate(), tabulate_qs(qs))
 
     def test_kwargs_execution(self):
         qs = Book.objects.all()

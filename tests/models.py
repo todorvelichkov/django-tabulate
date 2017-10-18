@@ -1,5 +1,5 @@
 from django.db import models
-from django_tabulate.mixins import TabulateQuerySet
+from django_tabulate import TabulateQuerySet
 
 class BookTabulateQuerySet(TabulateQuerySet):
 	pass
